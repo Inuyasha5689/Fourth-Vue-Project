@@ -1,6 +1,11 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
 <div id="app">
-    <input type="text" v-model="name">
-    <p>{{ name }}</p>
+   <button v-on:click="counter++">Increase</button>
+   <button v-on:click="counter--">Decrease</button>
+   <button v-on:click="secondCounter++">Increase Second</button>
+    <p>{{ counter }} | {{ secondCounter }}</p>
+    <p>{{ result() }} | {{ output }}</p>
 </div>
+
+<script src="app.js"></script>
