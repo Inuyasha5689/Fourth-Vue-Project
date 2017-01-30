@@ -2,7 +2,8 @@ new Vue({
     el: '#app',
     data: {
         counter: 0,
-        secondCounter: 0
+        secondCounter: 0,
+        link: 'http://google.com'
     },
     computed: {
         output: function() {
@@ -21,6 +22,9 @@ new Vue({
     methods: {
         result: function() {
             return this.counter > 5 ? 'Greater than 5': 'Smaller than 5';
+        },
+        changeLink: function() {
+            this.link = 'http://apple.com';
         }
     }
 });

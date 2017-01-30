@@ -6,6 +6,8 @@
    <button v-on:click="secondCounter++">Increase Second</button>
     <p>{{ counter }} | {{ secondCounter }}</p>
     <p>{{ result() }} | {{ output }}</p>
+    <button @click="changeLink">Click to Change Link</button>
+    <a :href="link">Link</a>
 </div>
 
 <script src="app.js"></script>
